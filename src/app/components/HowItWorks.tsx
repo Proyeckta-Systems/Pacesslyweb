@@ -1,6 +1,7 @@
 import React, { useRef } from "react";
 import { motion, useInView } from "motion/react";
-import computerMockup from "figma:asset/b8f70354a950a2d8f8e850b44f19bde2552fd013.png";
+// TODO: Reemplazar placeholder con la imagen real del mockup
+const computerMockup = "/assets/dashboard-mockup.gif";
 
 const listItems = [
   "Quién ingresó y cuándo",
@@ -89,7 +90,9 @@ export function HowItWorks() {
                 transition={{ duration: 0.55, ease: "easeOut", delay: inView ? 0.95 : 0 }}
               >
                 <a
-                  href="#contact"
+                  href="https://wa.link/x3fzzd"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="inline-block px-7 py-3 rounded-full bg-[#3527de] text-white text-sm font-semibold tracking-widest uppercase transition-colors duration-200 hover:bg-white/10"
                 >
                   Solicita Pacessly

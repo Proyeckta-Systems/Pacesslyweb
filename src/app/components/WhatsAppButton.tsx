@@ -4,9 +4,7 @@ import { motion, AnimatePresence } from "motion/react";
 export function WhatsAppButton() {
   const [hovered, setHovered] = useState(false);
 
-  const phoneNumber = "521XXXXXXXXXX"; // Reemplaza con el número real (formato internacional sin + ni espacios)
-  const message = encodeURIComponent("Hola, me interesa conocer más sobre Pacessly.");
-  const whatsappUrl = `https://wa.me/${phoneNumber}?text=${message}`;
+  const whatsappUrl = "https://wa.link/x3fzzd";
 
   return (
     <div className="fixed bottom-6 right-6 z-50 flex items-center gap-3">

@@ -2,7 +2,8 @@ import React, { useState, useEffect } from "react";
 import { Menu, X, Shield, ArrowUpRight } from "lucide-react";
 import { motion, AnimatePresence } from "motion/react";
 
-import logoImg from "figma:asset/d6dcb6013729b4b2434d9ad6b3d0e109aadd8a92.png";
+// TODO: Reemplazar placeholder con el logo real
+const logoImg = "/assets/logo.png";
 
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -45,9 +46,9 @@ export function Navbar() {
               {link.name}
             </a>
           ))}
-          <button className="bg-[#3527de] hover:bg-white text-white hover:text-black px-6 py-2 rounded-full text-xs font-bold tracking-widest uppercase flex items-center gap-2 transition-all group">
+          <a href="https://wa.link/x3fzzd" target="_blank" rel="noopener noreferrer" className="bg-[#3527de] hover:bg-white text-white hover:text-black px-6 py-2 rounded-full text-xs font-bold tracking-widest uppercase flex items-center gap-2 transition-all group">
             SOLICITAR PACESSLY <ArrowUpRight className="w-3.5 h-3.5 group-hover:rotate-45 transition-transform" />
-          </button>
+          </a>
         </div>
 
         {/* Mobile Menu Toggle */}
@@ -76,9 +77,9 @@ export function Navbar() {
                   {link.name}
                 </a>
               ))}
-              <button className="bg-[#3527de] text-white hover:bg-white hover:text-black px-8 py-4 rounded-full font-bold uppercase tracking-widest text-sm transition-all">
+              <a href="https://wa.link/x3fzzd" target="_blank" rel="noopener noreferrer" className="bg-[#3527de] text-white hover:bg-white hover:text-black px-8 py-4 rounded-full font-bold uppercase tracking-widest text-sm transition-all text-center block">
                 SOLICITAR PACESSLY
-              </button>
+              </a>
             </div>
           </motion.div>
         )}

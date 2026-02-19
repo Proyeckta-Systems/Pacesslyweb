@@ -1,6 +1,7 @@
 import React from "react";
 import { Mail, Phone } from "lucide-react";
-import logoImg from "figma:asset/d6dcb6013729b4b2434d9ad6b3d0e109aadd8a92.png";
+// TODO: Reemplazar placeholder con el logo real
+const logoImg = "/assets/logo.png";
 
 export function Footer() {
   const currentYear = new Date().getFullYear();
@@ -16,14 +17,14 @@ export function Footer() {
 
         {/* Contact info */}
         <div className="flex flex-col sm:flex-row items-center gap-4 text-sm">
-          <a href="mailto:hola@pacessly.com" className="flex items-center gap-2 hover:text-white transition-colors">
+          <a href="mailto:yohanvalencia@proyeckta.com" className="flex items-center gap-2 hover:text-white transition-colors">
             <Mail className="w-4 h-4" />
-            hola@pacessly.com
+            yohanvalencia@proyeckta.com
           </a>
           <span className="hidden sm:block text-white/10">|</span>
-          <a href="tel:+521XXXXXXXXXX" className="flex items-center gap-2 hover:text-white transition-colors">
+          <a href="tel:+573103834235" className="flex items-center gap-2 hover:text-white transition-colors">
             <Phone className="w-4 h-4" />
-            +52 1 XX XXXX XXXX
+            310 383 4235
           </a>
         </div>
 
@@ -31,9 +32,9 @@ export function Footer() {
         <div className="flex flex-col sm:flex-row items-center gap-4 text-xs tracking-wide uppercase">
           <span>© {currentYear} Pacessly. Todos los derechos reservados.</span>
           <div className="flex gap-4">
-            <a href="#" className="hover:text-white transition-colors">Términos</a>
-            <a href="#" className="hover:text-white transition-colors">Privacidad</a>
-            <a href="#" className="hover:text-white transition-colors">Cookies</a>
+            <a href="https://wa.link/x3fzzd" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">Términos</a>
+            <a href="https://wa.link/x3fzzd" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">Privacidad</a>
+            <a href="https://wa.link/x3fzzd" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">Cookies</a>
           </div>
         </div>
 

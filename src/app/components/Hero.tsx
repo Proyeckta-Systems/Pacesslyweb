@@ -1,10 +1,8 @@
 import React from "react";
 import { ArrowUpRight, Cpu, Globe, Lock, Shield, Zap, Layers } from "lucide-react";
 import { motion } from "motion/react";
-import { ImageWithFallback } from "./figma/ImageWithFallback";
-
-import imgRef from "figma:asset/bb736fd92aa8ffda550dca261c970c24decc56dd.png";
-import heroVideo from "figma:asset/c16182e78eb406afcb1e583041cf60fb7108c2d8.png";
+// TODO: Reemplazar placeholders con las imágenes reales del proyecto
+const heroVideo = "/assets/hero-bg.gif";
 
 export function Hero() {
   const logos = [
@@ -48,9 +46,9 @@ export function Hero() {
               Pacessly controla quién entra, valida accesos con reconocimiento facial y supervisa ventas y cierres de caja en una sola plataforma.
             </p>
             <div className="flex justify-center">
-              <button className="w-full sm:w-auto bg-white hover:bg-[#3527de] hover:text-white text-black px-12 py-5 rounded-full text-sm font-bold tracking-widest uppercase transition-all flex items-center justify-center gap-3 group">
+              <a href="https://wa.link/x3fzzd" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto bg-white hover:bg-[#3527de] hover:text-white text-black px-12 py-5 rounded-full text-sm font-bold tracking-widest uppercase transition-all flex items-center justify-center gap-3 group">
                 Solicitar Pacessly <ArrowUpRight className="w-5 h-5 group-hover:rotate-45 transition-transform" />
-              </button>
+              </a>
             </div>
           </div>
 

@@ -1,8 +1,8 @@
 import React, { useRef, useState } from "react";
 import { ShieldCheck, CheckCircle2, DoorOpen, PiggyBank, Bell, BarChart2 } from "lucide-react";
 import { motion, useInView } from "motion/react";
-import heroVideo from "figma:asset/c16182e78eb406afcb1e583041cf60fb7108c2d8.png";
-import bannerImg from "figma:asset/15d039bd97fee81c37046e32695f466ea1e60ffb.png";
+// TODO: Reemplazar placeholder con la imagen real del banner
+const bannerImg = "/assets/banner.gif";
 
 function KnowMoreButton() {
   const [hovered, setHovered] = useState(false);
@@ -111,7 +111,9 @@ export function Features() {
               className="mt-8"
             >
               <a
-                href="#contact"
+                href="https://wa.link/x3fzzd"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-6 py-3 rounded-full border border-white/20 text-white/70 hover:text-white hover:border-white/50 text-sm tracking-wide transition-all duration-300"
               >
                 Hablar con un Asesor
