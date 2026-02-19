@@ -1,8 +1,7 @@
 import React from "react";
 import { ArrowUpRight, Cpu, Globe, Lock, Shield, Zap, Layers } from "lucide-react";
 import { motion } from "motion/react";
-// TODO: Reemplazar placeholders con las imágenes reales del proyecto
-const heroVideo = "/assets/hero-bg.gif";
+const heroVideo = "/assets/hero-bg.mp4";
 
 export function Hero() {
   const logos = [
@@ -15,11 +14,14 @@ export function Hero() {
     <section className="relative min-h-screen pt-32 pb-8 md:pt-48 md:pb-12 overflow-hidden bg-black flex flex-col items-center justify-center text-center">
       {/* Animated Background Asset */}
       <div className="absolute inset-0 z-0">
-        <img 
-          src={heroVideo} 
-          alt="Background" 
-          className="w-full h-full object-cover opacity-40 grayscale"
-        />
+        <video 
+           src={heroVideo} 
+           autoPlay 
+           loop 
+           muted 
+           playsInline
+           className="w-full h-full object-cover opacity-40 grayscale"
+         />
         <div className="absolute inset-0 bg-gradient-to-b from-black via-black/40 to-black"></div>
       </div>
 

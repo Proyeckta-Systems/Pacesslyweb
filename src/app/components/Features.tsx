@@ -1,8 +1,7 @@
 import React, { useRef, useState } from "react";
 import { ShieldCheck, CheckCircle2, DoorOpen, PiggyBank, Bell, BarChart2 } from "lucide-react";
 import { motion, useInView } from "motion/react";
-// TODO: Reemplazar placeholder con la imagen real del banner
-const bannerImg = "/assets/banner.gif";
+const bannerVideo = "/assets/banner.mp4";
 
 function KnowMoreButton() {
   const [hovered, setHovered] = useState(false);
@@ -157,11 +156,14 @@ export function Features() {
         className="relative overflow-hidden my-6 h-[500px] md:h-[650px]"
       >
         {/* Imagen de fondo */}
-        <img
-          src={bannerImg}
-          alt="Control de acceso biométrico"
-          className="absolute inset-0 w-full h-full object-cover object-center opacity-60 grayscale"
-        />
+        <video
+           src={bannerVideo}
+           autoPlay
+           loop
+           muted
+           playsInline
+           className="absolute inset-0 w-full h-full object-cover object-center opacity-60 grayscale"
+         />
         {/* Overlay degradado */}
         <div className="absolute inset-0 bg-gradient-to-b from-black via-black/40 to-black" />
         {/* Difuminado superior */}

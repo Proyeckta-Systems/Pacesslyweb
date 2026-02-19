@@ -15,7 +15,7 @@ export function CTA() {
             ))}
           </div>
           <div className="relative z-10 text-center">
-            <h3 className="text-3xl md:text-5xl font-bold tracking-tight mb-4">¿Listo para modernizar el control de tu negocio?</h3>
+            <h3 className="text-2xl md:text-5xl font-bold tracking-tight mb-4 px-4 md:px-0">¿Listo para modernizar el control de tu negocio?</h3>
             <p className="text-white/30 text-lg">Únete a las empresas que ya han dado el salto tecnológico.</p>
           </div>
           {/* Animated glow */}

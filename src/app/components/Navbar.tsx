@@ -32,7 +32,7 @@ export function Navbar() {
     >
       <div className="container mx-auto px-6 flex justify-between items-center">
         <div className="flex items-center gap-2">
-          <a href="#"><img src={logoImg} alt="SecurePath Logo" className="h-20 w-auto" /></a>
+          <a href="#"><img src={logoImg} alt="SecurePath Logo" className="h-12 md:h-20 w-auto" /></a>
         </div>
 
         {/* Desktop Menu */}

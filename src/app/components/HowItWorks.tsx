@@ -1,7 +1,6 @@
 import React, { useRef } from "react";
 import { motion, useInView } from "motion/react";
-// TODO: Reemplazar placeholder con la imagen real del mockup
-const computerMockup = "/assets/dashboard-mockup.gif";
+const computerMockup = "/assets/dashboard-mockup.mp4";
 
 const listItems = [
   "Quién ingresó y cuándo",
@@ -110,15 +109,18 @@ export function HowItWorks() {
             className="relative flex items-center justify-center"
           >
             <div className="relative w-full max-w-[520px] mx-auto group">
-              <img
-                src={computerMockup}
-                alt="Pacessly Dashboard"
-                className="w-full h-auto object-contain rounded-3xl"
-                style={{
-                  maskImage: "radial-gradient(ellipse 80% 80% at 50% 50%, black 40%, transparent 100%)",
-                  WebkitMaskImage: "radial-gradient(ellipse 80% 80% at 50% 50%, black 40%, transparent 100%)",
-                }}
-              />
+              <video
+                 src={computerMockup}
+                 autoPlay
+                 loop
+                 muted
+                 playsInline
+                 className="w-full h-auto object-contain rounded-3xl"
+                 style={{
+                   maskImage: "radial-gradient(ellipse 80% 80% at 50% 50%, black 40%, transparent 100%)",
+                   WebkitMaskImage: "radial-gradient(ellipse 80% 80% at 50% 50%, black 40%, transparent 100%)",
+                 }}
+               />
               {/* Glow */}
               <div className="absolute -inset-10 bg-[#3527de]/10 rounded-full blur-[80px] -z-10 group-hover:bg-[#3527de]/20 transition-all duration-1000"></div>
             </div>
