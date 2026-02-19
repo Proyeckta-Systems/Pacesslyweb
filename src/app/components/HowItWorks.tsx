@@ -1,5 +1,6 @@
 import React, { useRef } from "react";
 import { motion, useInView } from "motion/react";
+import { AutoPlayVideo } from "./AutoPlayVideo";
 const computerMockup = "/assets/dashboard-mockup.mp4";
 
 const listItems = [
@@ -109,12 +110,8 @@ export function HowItWorks() {
             className="relative flex items-center justify-center"
           >
             <div className="relative w-full max-w-[520px] mx-auto group">
-              <video
+              <AutoPlayVideo
                  src={computerMockup}
-                 autoPlay
-                 loop
-                 muted
-                 playsInline
                  className="w-full h-auto object-contain rounded-3xl"
                  style={{
                    maskImage: "radial-gradient(ellipse 80% 80% at 50% 50%, black 40%, transparent 100%)",

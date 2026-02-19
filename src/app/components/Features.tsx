@@ -1,6 +1,7 @@
 import React, { useRef, useState } from "react";
 import { ShieldCheck, CheckCircle2, DoorOpen, PiggyBank, Bell, BarChart2 } from "lucide-react";
 import { motion, useInView } from "motion/react";
+import { AutoPlayVideo } from "./AutoPlayVideo";
 const bannerVideo = "/assets/banner.mp4";
 
 function KnowMoreButton() {
@@ -156,12 +157,8 @@ export function Features() {
         className="relative overflow-hidden my-6 h-[500px] md:h-[650px]"
       >
         {/* Imagen de fondo */}
-        <video
+        <AutoPlayVideo
            src={bannerVideo}
-           autoPlay
-           loop
-           muted
-           playsInline
            className="absolute inset-0 w-full h-full object-cover object-center opacity-60 grayscale"
          />
         {/* Overlay degradado */}
